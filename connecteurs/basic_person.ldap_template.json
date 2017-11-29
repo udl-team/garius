@@ -1,0 +1,28 @@
+{
+	"objectClass":
+	{
+		"inetOrgPerson":
+		{
+			"attribut":
+			{
+				"uid":"uid",
+				"sn":"nom_usuel",
+				"givenName":"prenom"
+			}
+		},
+		"supannPerson":
+		{
+			"attribut":
+			{
+				"supannCivilite":"civilite"
+			}
+		},
+		"udlPerson":
+		{
+			"attribut":
+			{
+				"udlBirthdate":"date_naissance"
+			}
+		}
+	}
+}

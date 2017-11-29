@@ -1,0 +1,12 @@
+{
+	"attributs":{
+		"uid":"",
+		"nom_usuel":"",
+		"nom_patronymique":"",
+		"prenom":"",
+		"civilite":"",
+		"date_naissance":"",
+		"categories":{}
+	},
+	"requete":"SELECT p.ID_PERSONNE as uid,p.NOM_USUEL as nom_usuel,p.NOM_PATRONYMIQUE as nom_patronymique,p.PRENOM as prenom,c.CIVILITE as civilite,p.DATE_NAISSANCE as date_naissance,GROUP_CONCAT(DISTINCT ucs.ID_SUPANN_CATEGORIE SEPARATOR \',\') as categories FROM UDL_PERSONNES p JOIN UDL_CIVILITES AS c ON p.ID_CIVILITE=c.ID_CIVILITE JOIN UDL_CATEGORIES_SUPANN as ucs ON ucs.ID_COMPTE=p.ID_PERSONNE WHERE p.ID_PERSONNE = <uid>"
+}
